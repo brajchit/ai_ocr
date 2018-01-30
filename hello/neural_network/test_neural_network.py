@@ -37,7 +37,7 @@ def test_neural_network():
     with tf.Session() as sess:
         sess.run(tf.initialize_all_variables())
         saver = tf.train.Saver()
-        saver.restore(sess, "./trained_data/trained_neural_network_mnist_A-J:e100.ckpt")
+        saver.restore(sess, "./trained_data/trained_neural_network_mnist_A-J--e100.ckpt")
         correct = tf.nn.in_top_k(prediction, y, 1)
         accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
         print('Accuracy: ', accuracy.eval({x: mnist.test.images, y: mnist.test.labels}))
