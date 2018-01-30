@@ -56,7 +56,7 @@ def train_neural_network(x):
             print('Epoch ', epoch, 'completed out of ', n_epochs, 'loss: ', epoch_loss)
             
         #save trained neural network    
-        save_path = saver.save(sess, "./trained_data/trained_neural_network_mnist_A-J:e100.ckpt")
+        save_path = saver.save(sess, "./trained_data/trained_neural_network_mnist_A-J--e100.ckpt")
         
 
 print("Train network...")

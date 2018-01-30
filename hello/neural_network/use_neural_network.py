@@ -35,7 +35,7 @@ def use_neural_network(input_img):
     with tf.Session() as sess:
         sess.run(tf.initialize_all_variables())
         saver = tf.train.Saver()
-        saver.restore(sess, "./trained_data/trained_neural_network_mnist_A-J:e100.ckpt")
+        saver.restore(sess, "./trained_data/trained_neural_network_mnist_A-J--e100.ckpt")
         output_nn = prediction.eval({x: [input_img]}, session = sess)
         result = np.argmax(output_nn, 1)
         letter = classes[str(result[0])]
