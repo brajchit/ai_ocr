@@ -1,0 +1,2 @@
+model_checkpoint_path: "trained_neural_network_mnist_A-J:e100.ckpt"
+all_model_checkpoint_paths: "trained_neural_network_mnist_A-J:e100.ckpt"
