@@ -13,7 +13,7 @@ mccabe==0.6.1
 numpy==1.14.0
 Pillow==5.0.0
 
-protobuf==3.5.1
+protobuf==3.18.3
 pylint==1.8.2
 python-resize-image==1.1.11
 requests==2.18.4
